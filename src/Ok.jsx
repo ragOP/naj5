@@ -396,40 +396,9 @@ export default function Ok() {
       <style>{css}</style>
 
       {/* NB chip */}
-      <div
-        id="nb-chip"
-        style={{
-          position: "fixed",
-          right: 12,
-          bottom: 12,
-          zIndex: 99999,
-          padding: "8px 12px",
-          fontSize: 12,
-          fontWeight: 700,
-          borderRadius: 999,
-          background: "rgba(20, 180, 90, 0.95)",
-          color: "#fff",
-          boxShadow: "0 6px 20px rgba(0,0,0,.2)",
-          display: nbChipVisible ? "inline-block" : "none",
-          pointerEvents: "none",
-        }}
-      >
-        NB: raw_call sent
-      </div>
+  
 
-      {/* Debug Toggle */}
-      <button
-        onClick={() => setShowLogPanel((v) => !v)}
-        style={{
-          position: "fixed", left: 12, bottom: 12, zIndex: 99999,
-          padding: "8px 12px", borderRadius: 999, border: "none",
-          fontSize: 12, fontWeight: 800, background: "#111827", color: "#fff",
-          boxShadow: "0 6px 20px rgba(0,0,0,.25)", cursor: "pointer"
-        }}
-        aria-label="Toggle debug"
-      >
-        🐞 Debug
-      </button>
+  
 
       {/* Debug Panel */}
       {showLogPanel && (
